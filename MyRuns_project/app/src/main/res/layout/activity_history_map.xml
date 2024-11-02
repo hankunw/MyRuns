@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapDisplayActivity" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/map_type"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/map_avg_speed"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:text="Avg speed : 0 m/h"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/map_cur_speed"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:text="Cur speed : n/a"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/map_climb"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:text="Climb : 0 Miles"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/map_calorie"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:text="Calorie : 0"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/map_distance"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:text="Distance : 0 Miles"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>
